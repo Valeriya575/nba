@@ -1,5 +1,4 @@
 # nba project
-### Program was written in 15.0.1 Java version
 ### Execute the program with the following command:
 
 ```bash

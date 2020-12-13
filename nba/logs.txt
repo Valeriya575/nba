@@ -1,10 +1,1 @@
-1607890007152	geckodriver	INFO	Listening on 127.0.0.1:38453
-1607890007900	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Valeriya\\AppData\\Local\\Temp\\rust_mozprofilemdnS6Z"
-*** You are running in headless mode.
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1607890010135	Marionette	INFO	Listening on port 65045
-1607890010541	Marionette	WARN	TLS certificate errors will be ignored for this session
-1607890018944	Marionette	INFO	Stopped listening on port 65045
-[Child 12920, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:545
-[Child 12920, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:545
+

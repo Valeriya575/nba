@@ -1,4 +1,6 @@
 import java.io.*;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
 
 import org.json.simple.parser.ParseException;
 import org.jsoup.Jsoup;
@@ -21,10 +23,11 @@ public class nba {
     public static void main(String[] args) {
         System.out.println(System.getProperties().get("java.class.path"));
 
-        System.setProperty("webdriver.gecko.driver","C:\\Users\\Valeriya\\nba\\geckodriver.exe");
-        //System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"null");
+        System.setProperty("webdriver.gecko.driver","geckodriver.exe");
+        Path path = FileSystems.getDefault().getPath("").toAbsolutePath();
+        System.out.println(path);
         System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
-        System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"C:\\Users\\Valeriya\\nba\\logs.txt");
+        System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"logs.txt");
 
         FirefoxOptions options = new FirefoxOptions();
         options.setHeadless(true);
@@ -70,11 +73,11 @@ public class nba {
                                     //save html code from web site (p.s. web site doesn't work)
                                     WebElement firstResult = wait.until(presenceOfElementLocated(By.xpath("//*")));
                                     String player_page = firstResult.getAttribute("outerHTML");
-                                    writer = new BufferedWriter( new FileWriter(".\\player.html"));
+                                    writer = new BufferedWriter( new FileWriter("pages\\player.html"));
                                     writer.write(player_page);
 
                                     //load html file locally
-                                    Document doc1 = Jsoup.parse(new File(".\\player.html"), "UTF-8");
+                                    Document doc1 = Jsoup.parse(new File("pages\\player.html"), "UTF-8");
 
                                     // 3PA
                                     Elements element = doc1.getElementsByClass("nba-stat-table__overflow");

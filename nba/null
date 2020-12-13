@@ -1,0 +1,11 @@
+1607885311309	geckodriver	INFO	Listening on 127.0.0.1:32492
+1607885312076	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Valeriya\\AppData\\Local\\Temp\\rust_mozprofileTcdJGo"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607885314325	Marionette	INFO	Listening on port 61879
+1607885314723	Marionette	WARN	TLS certificate errors will be ignored for this session
+1607885327636	Marionette	INFO	Stopped listening on port 61879
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
